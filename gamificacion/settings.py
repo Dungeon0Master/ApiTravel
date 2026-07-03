@@ -13,7 +13,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # ─────────────────────────────────────────────
 SECRET_KEY = os.environ.get(
     "DJANGO_SECRET_KEY",
-    "django-insecure-cambia-esto-en-produccion-12345678",
+    "87640402edb17e79458c60612299e0e2",
 )
 
 DEBUG = os.environ.get("DEBUG", "False") == "True"
@@ -74,6 +74,7 @@ import mongoengine
 MONGO_URI = os.environ.get(
     "MONGO_URI",
     "mongodb://localhost:27017/gamificacion_db",   # sobreescribir en Render con variable de entorno
+    
 )
 
 mongoengine.connect(host=MONGO_URI)
