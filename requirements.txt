@@ -1,0 +1,26 @@
+# ──────────────────────────────────────────────────────────────────────────────
+#  requirements.txt — Gamificación Deportiva API
+#  Python 3.11+  |  MongoDB  |  Render deployment
+# ──────────────────────────────────────────────────────────────────────────────
+
+# Web framework
+Django==5.0.6
+
+# MongoDB ODM (Object-Document Mapper)
+mongoengine==0.29.1
+pymongo==4.7.3          # Driver subyacente de mongoengine
+
+# CORS
+django-cors-headers==4.4.0
+
+# Servidor WSGI para producción (Render / Gunicorn)
+gunicorn==22.0.0
+
+# Archivos estáticos en producción (sin necesidad de nginx)
+whitenoise==6.7.0
+
+# DRF (incluido para renderers JSON y permisos; ligero y opcional)
+djangorestframework==3.15.2
+
+# Carga de variables de entorno en desarrollo local
+python-dotenv==1.0.1
