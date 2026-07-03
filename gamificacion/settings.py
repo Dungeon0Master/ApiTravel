@@ -77,7 +77,7 @@ MONGO_URI = os.environ.get(
     
 )
 
-mongoengine.connect(host=MONGO_URI)
+mongoengine.connect(host=MONGO_URI connect=False)
 
 # ─────────────────────────────────────────────
 #  CORS
